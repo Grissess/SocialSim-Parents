@@ -1,0 +1,67 @@
+#profile-photo-container {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+#profile-image{
+    width: 100%;
+    height: 40%;
+}
+
+#user-profile-container {
+    width: 80%;
+    height: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.userinput {
+    padding-left: 5px;
+    margin-left: 5px;
+    width: 25%;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+#gender {
+    height: auto;
+    font-size: 1.5vw;
+    border: 2px solid #a6bddb;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 5px;
+    width: 20%;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.privacy-button {
+    margin-top: 10px;
+    width: 15vw; height: 8vh;
+    font-size: 1.5vw;
+    font-weight: bold;
+    outline: none;
+    border: 5px solid #525252;
+    background: #f0f0f0;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.privacy-button.select {
+    background: #9ecae1;
+}
+
+#back-btn, #register-btn {
+    margin-top: 10px;
+    width: 15vw; height: 8vh;
+    font-size: 1.5vw;
+    font-weight: bold;
+    outline: none;
+    border: 5px solid #9ecae1;
+    background: #2171b5;
+    color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}

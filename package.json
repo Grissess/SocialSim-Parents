@@ -1,0 +1,50 @@
+{
+    "name": "parentsims",
+    "version": "1.0.0",
+    "description": "Parent Privacy Game and Simulator",
+    "scripts": {
+        "buildDev": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development --config webpack.dev.config.js",
+        "buildProd": "rm -rf dist && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.prod.config.js",
+        "start": "node ./dist/server.js"
+    },
+    "keywords": [
+        "Privacy",
+        "Social Security",
+        "Social Network",
+        "Parent Privacy"
+    ],
+    "author": "Paweena Manotipya",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "bootstrap": "4.1.3",
+        "cors": "^2.8.5",
+        "express": "^4.16.4",
+        "express-session": "^1.15.6",
+        "googleapis": "^27.0.0",
+        "jquery": "^3.3.1",
+        "mongoose": "^5.4.18",
+        "popper.js": "1.14.5",
+        "sentiment": "^5.0.1",
+        "session": "^0.1.0"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-preset-env": "^1.7.0",
+        "connect-mongo": "^2.0.3",
+        "css-loader": "^1.0.1",
+        "file-loader": "^2.0.0",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.4.4",
+        "optimize-css-assets-webpack-plugin": "^5.0.1",
+        "style-loader": "^0.23.1",
+        "uglifyjs-webpack-plugin": "^2.0.1",
+        "webpack": "^4.24.0",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-middleware": "^3.4.0",
+        "webpack-jquery-ui": "^2.0.1",
+        "webpack-node-externals": "^1.7.2"
+    }
+}

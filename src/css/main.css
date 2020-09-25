@@ -1,0 +1,279 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /*font-family: monospace;*/
+    overflow: hidden;
+    background: #252525;
+    position: relative;
+}
+
+#error-msg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    padding-left: 5px;
+    z-index: 1000;
+    background: #fee0d2;
+    color: #a50f15;
+    font-weight: bold;
+}
+
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+}
+  
+  
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+input {
+    width: 100%;
+    height: auto;
+    font-size: 1.5vw;
+    background-color: #3690c0;
+    border: 2px solid #a6bddb;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.socialsim-logo {
+    position: absolute;
+    top: 5px; left: 5px;
+    font-size: 20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: left;
+}
+
+.kent-logo {
+    position: absolute;
+    top: 10px; right: 10px;
+}
+
+.title-container {
+    width: 90vw; height: 90vh;
+    text-align: center;
+    padding-top: calc(25vh - 50px);
+    margin-left: 5vw;
+    margin-top: 2.5vw;
+    border: 2px solid #000; 
+    border-radius: 5px;
+    overflow: auto;
+    background: #fff;
+    position: relative;
+}
+
+.title-container h1 {
+    font-size: 10vw;
+    font-weight: bold;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+
+.title-container h2 {
+    font-size: 5vw;
+}
+
+.title-container h3 {
+    margin-top: 5vh;
+    font-size: 2vw;
+}
+
+#startgame-btn {
+    margin-top: 10vh;
+    width: 20vw; height: 10vh;
+    font-size: 2vw;
+    font-weight: bold;
+    outline: none;
+    border: 5px solid #9ecae1;
+    background: #2171b5;
+    color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startgame-btn:hover {
+    background: #08519c;
+    width: 21vw; height: 11vh;
+}
+
+#page-1 {
+    display: block;
+}
+
+.instruction-container {
+    width: 90vw; height: 90vh;
+    text-align: center;
+    padding-top: calc(15vh - 50px);
+    margin-left: 5vw;
+    margin-top: 2.5vw;
+    border: 2px solid #000; 
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+}
+
+.instruction-container h1 {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+#instruction-detail {
+    width: 100%; height: 90%;
+    text-align: left;
+    padding: 20px;
+    text-align: justify;
+}
+
+#instruction-detail h2 {
+    font-size: 2vw;
+}
+
+#instruction-detail h3 {
+    font-size: 1.5vw;
+}
+
+#login-container h3 {
+    margin-top: 10px;
+}
+
+#login-btn {
+    margin-top: 10px;
+    width: 15vw; height: 8vh;
+    font-size: 1.5vw;
+    font-weight: bold;
+    outline: none;
+    border: 5px solid #c7e9c0;
+    background: #41ab5d;
+    color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signup-btn {
+    margin-top: 10px;
+    width: 15vw; height: 8vh;
+    font-size: 1.5vw;
+    font-weight: bold;
+    outline: none;
+    border: 5px solid #9ecae1;
+    background: #2171b5;
+    color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#next-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 15vw; height: 8vh;
+    font-size: 1.5vw;
+    font-weight: bold;
+    outline: none;
+    border: 5px solid #9ecae1;
+    background: #2171b5;
+    color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#page-2, #page-3, #page-4, #page-5, #page-6, #page-7, #page-0 {
+    display: none;
+}
+
+.optout {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 12px;
+}
+
+#opt-btn {
+    margin-top: 10px;
+    width: 15vw; height: 8vh;
+    font-size: 1.5vw;
+    font-weight: bold;
+    outline: none;
+    border: 5px solid #9ecae1;
+    background: #2171b5;
+    color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#done-btn {
+    margin-top: 10px;
+    width: 15vw; height: 8vh;
+    font-size: 1.5vw;
+    font-weight: bold;
+    outline: none;
+    border: 5px solid #9ecae1;
+    background: #2171b5;
+    color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#favorites {
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.checkbox-inline {
+    width: 200px !important;
+}
