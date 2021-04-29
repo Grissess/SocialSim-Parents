@@ -152,7 +152,7 @@ function update_final_data(user_data, posts, score, risk)
     $.ajaxSetup({ async: false });
     $.ajax({
         type: 'POST',
-        url: 'https://ancient-earth-20794.herokuapp.com/addNewUser',
+        url: '/addNewUser',
         contentType: "application/json",
         data: JSON.stringify(google_data),
         complete: function () {

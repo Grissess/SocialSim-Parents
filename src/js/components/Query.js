@@ -7,7 +7,7 @@ export function Query_spread_sheets()
     $.ajaxSetup({ async: false });
     $.ajax({
         type: 'GET',
-        url: 'https://ancient-earth-20794.herokuapp.com/getAllData',
+        url: '/getAllData',
         contentType: 'application/json',
         success: function (data) {
             result = data;
@@ -63,7 +63,7 @@ export function Query_update_user(user)
     $.ajaxSetup({ async: false });
     $.ajax({
         type: 'POST',
-        url: 'https://ancient-earth-20794.herokuapp.com/addNewUser',
+        url: '/addNewUser',
         contentType: "application/json",
         data: JSON.stringify(new_data),
         complete: function () {

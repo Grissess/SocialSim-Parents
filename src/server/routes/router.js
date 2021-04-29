@@ -1,5 +1,5 @@
 import express from 'express';
-import {Query_all_data, Query_write_test} from '../google-sheets/Query';
+import {Query_all_data, Query_write_test} from '../sqlite/Query';
 
 // Initialize router
 const router = express.Router();
