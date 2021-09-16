@@ -21,7 +21,7 @@ export var optout = false;
 
 // Start a new day
 export function start_day(number_of_day, number_of_post)
-{   
+{
     // Show current like here
     $('.user-like').html("Your Likes: " + parseInt(profile_like + get_all_post_like()));
     console.log(current_user_data);
@@ -65,12 +65,14 @@ export function start_day(number_of_day, number_of_post)
         $('#current-post-photo').empty();
         $('#current-post-photo').append(image);
         $('#current-post-photo').show();
+        go_back(data.photos);
 
     } else {
         $('#current-post-photo').hide();
         // reset here
         game_reset();
         set_photo_button(data.photos);
+
     }
 }
 
@@ -105,7 +107,7 @@ function set_scenario(scenario)
 
 // Set photo buttons
 function set_photo_button(photos)
-{   
+{
     let photo_button = $('#photo-button');
 
     photo_button.off().on('click', () => {
@@ -117,13 +119,28 @@ function set_photo_button(photos)
     return;
 }
 
+// Go Back Button
+function go_back(photos)
+{
+	let go_back = $('#go-back');
+
+	go_back.off().on('click', () => {
+    start_photo_selection(photos);
+    $('#page-4').hide();
+    $('#page-5').show();
+	});
+
+  return
+
+}
+
 // Get maximum photo of players
 export function get_maximum_photo()
 {
     return maximum_photo;
 }
 
-// Set maximum photo 
+// Set maximum photo
 export function set_maximum_photo(number)
 {
     maximum_photo = number;
@@ -214,7 +231,7 @@ export function set_post_button()
         let sharing = $('.sharing-button.select').attr('id');
         if (is_empty(post_message) || !current_post.photo.path) {
             show_error_message("Please put post some message or select any photo");
-        } else { 
+        } else {
 
             // Calculate post sentiment
             currentPost.post.text = post_message;
@@ -238,7 +255,7 @@ export function set_post_button()
 
             // This is to check number of post and number of day
             // and apply to a new day or new post
-            
+
             if (current_day < 5) {
                 current_post_num = 0;
                 current_day += 1;

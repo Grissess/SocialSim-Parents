@@ -17,7 +17,7 @@ export function set_button_events()
     let back_button = $('#back-btn');
     let optout_button = $('#opt-btn');
     let register_button = $('#register-btn');
-    
+
     back_button.on('click', (e) => {
         $('#page-3').hide();
         $('#page-2').show();
@@ -61,7 +61,7 @@ export function set_button_events()
         if (is_empty(email) || is_empty(password) || check_existing_email(email)) {
             show_error_message('This Email is already exist or please put new email and password');
         } else {
-            
+
             // Calculate score here
             let user = get_user_data();
 
@@ -90,7 +90,7 @@ export function set_button_events()
 
             // Calculate score
             recompute_score();
-        
+
             $('#page-3').hide();
             $('#page-2').show();
 

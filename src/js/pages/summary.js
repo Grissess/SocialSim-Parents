@@ -59,7 +59,7 @@ export function summarize_score()
     var profile_reasons = "";
     var profile_risk = "Low";
 
-    if (current_user_data.password.length < 8) { 
+    if (current_user_data.password.length < 8) {
         profile_reasons = "Password should be at least 8 characters : secure";
     } else {
         profile_reasons = "";
@@ -70,7 +70,7 @@ export function summarize_score()
     '<td>' + profile_like + '</td><td>' + profile_score + '</td><td>' + profile_risk + '</td>');
     tbody.append(profile_tr);
 
-    
+
     let count = 0;
     for (var key in posts) {
 
@@ -103,7 +103,7 @@ export function summarize_score()
     $('#summary-detail').append(table);
     update_final_data(current_user_data, posts, current_score, risk);
     // The end!
-    $('#summary-detail').append('Thank you! please give us your <strong><a href="https://kent.qualtrics.com/jfe/form/SV_aaXyvB5HreyoQgR">SURVEY</a></strong>');
+    $('#summary-detail').append('Thank you! please give us your <strong><a href="https://forms.gle/TRaFhF2J6bhwB7oa7">SURVEY</a></strong>');
     return;
 }
 
@@ -148,7 +148,7 @@ function update_final_data(user_data, posts, score, risk)
             google_data[i].optout = (optout) ? "Yes" : "No";
         }
     }
-    
+
     $.ajaxSetup({ async: false });
     $.ajax({
         type: 'POST',

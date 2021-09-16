@@ -12,51 +12,51 @@ export function get_day_1()
             },
             {
                 path: '/day1/2.png',
-                score: -1,
+                score: -0,
                 like: 1,
                 risk: 'low',
-                reason: 'People can see how the house looks like but don’t see any personal information'
+                reason: 'People can see what the inside of the house looks like but don’t see any personal information'
             },
             {
                 path: '/day1/3.png',
                 score: -5,
                 like: 1,
                 risk: 'high',
-                reason: 'People know your family faces and how your house looks like'
+                reason: 'People can see your families faces and what your house looks like'
             },
             {
                 path: '/day1/4.png',
-                score: -3,
+                score: -0,
                 like: 1,
-                risk: 'medium',
-                reason: 'People see where your house located in neighborhood'
+                risk: 'low',
+                reason: 'People see where your house is located in neighborhood'
             },
             {
                 path: '/day1/5.png',
                 score: -3,
                 like: 1,
                 risk: 'medium',
-                reason: 'People see your face +your kids’ faces but no other information'
+                reason: 'People see your face and your kids’ faces but no other information'
             },
             {
                 path: '/day1/6.png',
                 score: -1,
                 like: 1,
                 risk: 'low',
-                reason: 'Photo doesn’t reveal children’s faces, but there is a chance that other parents can like and following your profile'
+                reason: 'Photo doesn’t reveal children’s faces'
             },
             {
                 path: '/day1/7.png',
                 score: -3,
                 like: 1,
-                risk: 'high',
-                reason: 'People see your kid’s faces and her teacher’s face, it’s humiliating'
+                risk: 'medium',
+                reason: 'People see your kid’s face and his teacher, it’s humiliating'
             },
             {
                 path: '/day1/8.png',
                 score: -1,
                 like: 1,
-                risk: 'medium',
+                risk: 'low',
                 reason: 'People see the name of the school but no other information'
             }
         ]
@@ -79,30 +79,30 @@ export function get_day_2()
             },
             {
                 path: '/day2/2.png',
-                score: -1,
+                score: -3,
                 like: 1,
                 risk: 'medium',
                 reason: 'People can see your child’s action but face. Humiliating'
             },
             {
                 path: '/day2/3.png',
-                score: -3,
+                score: -5,
                 like: 1,
-                risk: 'medium',
+                risk: 'high',
                 reason: 'People see your kid’s face and the state of undress. Child Pornography'
             },
             {
                 path: '/day2/4.png',
-                score: -1,
+                score: -0,
                 like: 1,
                 risk: 'low',
                 reason: 'People see your children’s faces and their attitude but not so obvious'
             },
             {
                 path: '/day2/5.png',
-                score: -3,
+                score: -1,
                 like: 1,
-                risk: 'medium',
+                risk: 'low',
                 reason: 'People see your children’s faces and their misbehavior.'
             },
             {
@@ -114,14 +114,14 @@ export function get_day_2()
             },
             {
                 path: '/day2/7.png',
-                score: -5,
+                score: -0,
                 like: 1,
-                risk: 'medium',
+                risk: 'low',
                 reason: 'People can tell your child figure and see that parents put him in the time-out.'
             },
             {
                 path: '/day2/8.png',
-                score: -5,
+                score: -3,
                 like: 1,
                 risk: 'medium',
                 reason: 'People see your children’s faces and their misbehavior. Humiliating'
@@ -139,7 +139,7 @@ export function get_day_3()
         photos: [
             {
                 path: '/day3/1.png',
-                score: -1,
+                score: -0,
                 like: 1,
                 risk: 'low',
                 reason: 'People don’t see your child’s face but see only action'
@@ -160,9 +160,9 @@ export function get_day_3()
             },
             {
                 path: '/day3/4.png',
-                score: -3,
+                score: -1,
                 like: 1,
-                risk: 'medium',
+                risk: 'low',
                 reason: 'People see your child’s face and your address'
             },
             {
@@ -181,14 +181,14 @@ export function get_day_3()
             },
             {
                 path: '/day3/7.png',
-                score: -5,
+                score: -3,
                 like: 1,
-                risk: 'high',
+                risk: 'medium',
                 reason: 'People see your legal document and some personal information'
             },
             {
                 path: '/day3/8.png',
-                score: -1,
+                score: -0,
                 like: 1,
                 risk: 'low',
                 reason: 'People see your kid’s face but no other information given'
@@ -206,9 +206,9 @@ export function get_day_4()
         photos: [
             {
                 path: '/day4/1.png',
-                score: -1,
+                score: -5,
                 like: 1,
-                risk: 'low',
+                risk: 'high',
                 reason: 'People don’t see your child’s face but see test report. Humiliating'
             },
             {
@@ -220,9 +220,9 @@ export function get_day_4()
             },
             {
                 path: '/day4/3.png',
-                score: -1,
+                score: -3,
                 like: 1,
-                risk: 'low',
+                risk: 'medium',
                 reason: 'People know that your child is upset but no details given'
             },
             {
@@ -234,30 +234,30 @@ export function get_day_4()
             },
             {
                 path: '/day4/5.png',
-                score: -1,
+                score: -0,
                 like: 1,
                 risk: 'low',
                 reason: 'No face to identify and it’s random cause'
             },
             {
                 path: '/day4/6.png',
-                score: -3,
+                score: -1,
                 like: 1,
-                risk: 'medium',
+                risk: 'low',
                 reason: 'Photo can see that the child is in trouble but don’t see the face'
             },
             {
                 path: '/day4/7.png',
-                score: -5,
+                score: -1,
                 like: 1,
-                risk: 'high',
+                risk: 'low',
                 reason: 'People see your child’s face engaging in digital device, attract followers'
             },
             {
                 path: '/day4/8.png',
-                score: -3,
+                score: -0,
                 like: 1,
-                risk: 'medium',
+                risk: 'low',
                 reason: 'People see your kid’s figure but can’t really tell what he is up to'
             }
         ]
@@ -280,49 +280,49 @@ export function get_day_5()
             },
             {
                 path: '/day5/2.png',
-                score: -5,
+                score: -1,
                 like: 1,
-                risk: 'high',
+                risk: 'low',
                 reason: 'People can see your child’s face and other kids that have problem'
             },
             {
                 path: '/day5/3.png',
-                score: -1,
+                score: -5,
                 like: 1,
-                risk: 'low',
+                risk: 'high',
                 reason: 'People don’t see your child’s face but know that your child is on medication'
             },
             {
                 path: '/day5/4.png',
-                score: -1,
+                score: -5,
                 like: 1,
-                risk: 'low',
+                risk: 'high',
                 reason: 'People can guess that your child’s health condition is in serious manner'
             },
             {
                 path: '/day5/5.png',
-                score: -3,
+                score: -1,
                 like: 1,
-                risk: 'medium',
+                risk: 'low',
                 reason: 'People know without having to see your child’s face that your child has ADHD'
             },
             {
                 path: '/day5/6.png',
-                score: -5,
+                score: -3,
                 like: 1,
-                risk: 'high',
+                risk: 'medium',
                 reason: 'Your child’s face and his behavior show that he is depress.'
             },
             {
                 path: '/day5/7.png',
-                score: -1,
+                score: -0,
                 like: 1,
                 risk: 'low',
                 reason: 'People don’t see any identities, only see positive post'
             },
             {
                 path: '/day5/8.png',
-                score: -1,
+                score: -0,
                 like: 1,
                 risk: 'low',
                 reason: 'People see your face but not your child’s face, support from community'

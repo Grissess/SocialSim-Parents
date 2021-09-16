@@ -2,7 +2,7 @@ import { start_register } from './register';
 import { start_day } from './game';
 import { get_user_data, get_score } from '../components/user';
 import { show_error_message, get_current_user} from '../components/utils';
-import {Query_spread_sheets} from '../components/Query';
+import {Query_spread_sheets,SHA256} from '../components/Query';
 
 export var data = undefined;
 export var current_user_data = undefined;
@@ -20,7 +20,7 @@ export function start_instruction()
 
 export function initialize_button_events()
 {
-    
+
     let loginBtn = $('#login-btn');
     let signupBtn = $('#signup-btn');
 
@@ -55,7 +55,7 @@ export function initialize_button_events()
 function check_login_user(email, password)
 {
     for (let i = 0; i < data.length; ++i) {
-        if (email === data[i].email && password === data[i].password) {
+        if (email === data[i].email && SHA256(password) === data[i].password) {
             return true;
         }
     }

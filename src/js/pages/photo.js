@@ -16,6 +16,8 @@ function set_photos(photo_data)
     let reasons = $('#reasons');
     // Reset all photos
     photos.empty();
+    reasons.empty();
+    reasons.append("<h3>Why this photo? (this is not a post and will not show on your feed)</h3>");
     // Set all photos
     for (let i = 0; i < photo_data.length; ++i) {
         let photo = photo_data[i];
@@ -28,7 +30,7 @@ function set_photos(photo_data)
             alt: ''
         });
 
-        let photo_number = $('<div/>').css({ 
+        let photo_number = $('<div/>').css({
             position: 'absolute',
             top: '5px',
             left: '5px',
@@ -67,9 +69,9 @@ function set_photos(photo_data)
 
                     let reason = $('<input/>', {
                         id: 'photo-input-' + i,
-                        type: 'text', 
+                        type: 'text',
                         placeholder: 'Photo #' + (i + 1)
-                    }).css({ float: 'left', width: '100%', height: 'auto', 
+                    }).css({ float: 'left', width: '100%', height: 'auto',
                         border: '2px solid #000',
                         'border-radius': '5px',
                         'background': '#fff',
@@ -108,9 +110,9 @@ function set_photos(photo_data)
                 } else {
                     show_error_message("You can choose 1 photo at the time");
                 }
-            } 
+            }
         });
     }
-    
+
     return;
 }
