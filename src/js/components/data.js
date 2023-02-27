@@ -1,7 +1,7 @@
 export function get_day_1()
 {
     let data = {
-        scenario: "You just bought a new house and would like to tell your networks about your good news. Your kids also just start their first day at school or daycare.",
+        scenario: "You just bought a new house and would like to tell your networks about your good news. Your kids also just started their first day at school or daycare.",
         photos: [
             {
                 path: '/day1/1.png',
@@ -68,7 +68,7 @@ export function get_day_1()
 export function get_day_2()
 {
     let data = {
-        scenario: "Your child reaches the age that needs to be toilet trained. You also want to teach your child other disciplines since the child has started to disobey your house rules and disrespects others in public space.",
+        scenario: "Your child reaches the age where they need to be toilet trained. You also want to teach your child other disciplines since the child has started to disobey your house rules and disrespects others in public space.",
         photos: [
             {
                 path: '/day2/1.png',
@@ -135,7 +135,7 @@ export function get_day_2()
 export function get_day_3()
 {
     let data = {
-        scenario: "Your kid receives some achievements (winning a scholarships/getting driving license/getting accepted to a nice school or university) and you want to share the news with others. You are very happy and want to reward your kid and family by taking them on a nice vacation)",
+        scenario: "Your kid receives some achievements (winning a scholarships/getting driving license/getting accepted to a nice school or university) and you want to share the news with others. You are very happy and want to reward your kid and family by taking them on a nice vacation",
         photos: [
             {
                 path: '/day3/1.png',
@@ -202,7 +202,7 @@ export function get_day_3()
 export function get_day_4()
 {
     let data = {
-        scenario: "You learn that your child starts to complain about going to school. His/Her academic performance also drops dramatically. You suspect that your child may involve in some kind of bullying or cyberbullying or learning difficulties, but you are not so certain about the causes.",
+        scenario: "You learn that your child starts to complain about going to school. His/Her academic performance also drops dramatically. You suspect that your child may be involved in some kind of bullying or cyberbullying or learning difficulties, but you are not so certain about the causes.",
         photos: [
             {
                 path: '/day4/1.png',
