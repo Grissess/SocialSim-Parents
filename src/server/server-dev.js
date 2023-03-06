@@ -11,18 +11,19 @@ const app = express(),
             DIST_DIR = __dirname,
             HTML_FILE = path.join(DIST_DIR, 'index.html'),
             compiler = webpack(config);
+const rtr = express.Router();
 
 // Parse incoming request
-app.use(express.static('asset'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use('/', route);
+rtr.use(express.static('asset'));
+rtr.use(bodyParser.json());
+rtr.use(bodyParser.urlencoded({ extended: false }));
+rtr.use('/', route);
 
-app.use(webpackDevMiddleware( compiler, {
+rtr.use(webpackDevMiddleware( compiler, {
     publicPath: config.output.publicPath
 }));
 
-app.get('*', (req, res, next) => {
+rtr.get('*', (req, res, next) => {
     compiler.outputFileSystem.readFile( HTML_FILE, (err, result) => {
 
         if (err) {
@@ -34,6 +35,8 @@ app.get('*', (req, res, next) => {
         res.end();
     });
 });
+
+app.use('/parents-survey', rtr);
 
 const PORT = process.env.PORT || 3000;
 

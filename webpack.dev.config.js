@@ -10,7 +10,7 @@ module.exports = {
     // Define webpack built.
     output: {
         path: path.join(__dirname, 'dist'),
-        publicPath: '/',
+        publicPath: '/parents-survey/',
         filename: '[name].js'
     },
     // Development mode
@@ -18,7 +18,7 @@ module.exports = {
     // Targeting to frontend
     target: 'web',
     
-    devtool: '#source-map',
+    devtool: 'source-map',
 
     module: {
         rules: [
@@ -56,6 +56,6 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
         }),
-        new webpack.NoEmitOnErrorsPlugin()
+        //new webpack.NoEmitOnErrorsPlugin()
     ]
 }
