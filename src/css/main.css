@@ -29,8 +29,8 @@ body, html {
     -o-animation: fadeIn ease 1s;
     -ms-animation: fadeIn ease 1s;
 }
-  
-  
+
+
 @keyframes fadeIn{
     0% {
         opacity:0;
@@ -95,7 +95,7 @@ input {
     text-align: left;
 }
 
-.kent-logo {
+.canton-logo {
     position: absolute;
     top: 10px; right: 10px;
 }
@@ -106,7 +106,7 @@ input {
     padding-top: calc(25vh - 50px);
     margin-left: 5vw;
     margin-top: 2.5vw;
-    border: 2px solid #000; 
+    border: 2px solid #000;
     border-radius: 5px;
     overflow: auto;
     background: #fff;
@@ -156,7 +156,7 @@ input {
     padding-top: calc(15vh - 50px);
     margin-left: 5vw;
     margin-top: 2.5vw;
-    border: 2px solid #000; 
+    border: 2px solid #000;
     border-radius: 5px;
     overflow: hidden;
     background: #fff;
@@ -169,9 +169,9 @@ input {
 }
 
 #instruction-detail {
-    width: 100%; height: 90%;
+    width: 100%; height: 90%; font-size: 10px;
     text-align: left;
-    padding: 20px;
+    padding: 10px;
     text-align: justify;
 }
 

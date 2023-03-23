@@ -6,7 +6,6 @@ import {show_error_message, hide_error_message, get_all_post_like} from '../comp
 import {summarize_score} from './summary';
 import { current_user_data } from './instruction';
 import { profile_like } from '../components/user';
-import { ROOT_PATH } from '../components/Query';
 
 // Maximum photo
 export var maximum_photo = 0;
@@ -78,7 +77,7 @@ export function start_day(number_of_day, number_of_post)
 }
 
 // Get new data base on current day number
-function get_current_data_inner(day_num)
+function get_current_data(day_num)
 {
     switch (day_num) {
         case 1: return get_day_1(); break;
@@ -88,14 +87,6 @@ function get_current_data_inner(day_num)
         case 5: return get_day_5(); break;
         default: return undefined;
     }
-}
-
-function get_current_data(day_num) {
-	const data = get_current_data_inner(day_num);
-	for(const photo of data.photos) {
-		photo.path = ROOT_PATH + photo.path;
-	}
-	return data;
 }
 
 // Set day headers

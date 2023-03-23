@@ -1,7 +1,5 @@
 import { get_new_user_id, add_to_current_data } from '../components/utils';
 
-export const ROOT_PATH = '/parents-survey'
-
 export function Query_spread_sheets()
 {
     console.log("testing");
@@ -9,7 +7,7 @@ export function Query_spread_sheets()
     $.ajaxSetup({ async: false });
     $.ajax({
         type: 'GET',
-        url: ROOT_PATH + '/getAllData',
+        url: '/getAllData',
         contentType: 'application/json',
         success: function (data) {
             result = data;
@@ -65,7 +63,7 @@ export function Query_update_user(user)
     $.ajaxSetup({ async: false });
     $.ajax({
         type: 'POST',
-        url: ROOT_PATH + '/addNewUser',
+        url: '/addNewUser',
         contentType: "application/json",
         data: JSON.stringify(new_data),
         complete: function () {

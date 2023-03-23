@@ -14,13 +14,13 @@ module.exports = {
     // Define webpack built.
     output: {
         path: path.join(__dirname, 'dist'),
-        publicPath: '/parents-survey/',
+        publicPath: '/',
         filename: '[name].js'
     },
     // Targeting to frontend
     target: 'web',
     
-    devtool: 'source-map',
+    devtool: '#source-map',
 
     optimization: {
         /*

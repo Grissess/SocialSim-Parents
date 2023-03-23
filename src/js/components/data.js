@@ -14,7 +14,7 @@ export function get_day_1()
                 path: '/day1/2.png',
                 score: -0,
                 like: 1,
-                risk: 'low',
+                risk: 'safe',
                 reason: 'People can see what the inside of the house looks like but don’t see any personal information'
             },
             {
@@ -26,7 +26,7 @@ export function get_day_1()
             },
             {
                 path: '/day1/4.png',
-                score: -0,
+                score: -1,
                 like: 1,
                 risk: 'low',
                 reason: 'People see where your house is located in neighborhood'
@@ -95,7 +95,7 @@ export function get_day_2()
                 path: '/day2/4.png',
                 score: -0,
                 like: 1,
-                risk: 'low',
+                risk: 'safe',
                 reason: 'People see your children’s faces and their attitude but not so obvious'
             },
             {
@@ -114,7 +114,7 @@ export function get_day_2()
             },
             {
                 path: '/day2/7.png',
-                score: -0,
+                score: -1,
                 like: 1,
                 risk: 'low',
                 reason: 'People can tell your child figure and see that parents put him in the time-out.'
@@ -141,7 +141,7 @@ export function get_day_3()
                 path: '/day3/1.png',
                 score: -0,
                 like: 1,
-                risk: 'low',
+                risk: 'safe',
                 reason: 'People don’t see your child’s face but see only action'
             },
             {
@@ -190,7 +190,7 @@ export function get_day_3()
                 path: '/day3/8.png',
                 score: -0,
                 like: 1,
-                risk: 'low',
+                risk: 'safe',
                 reason: 'People see your kid’s face but no other information given'
             }
         ]
@@ -236,7 +236,7 @@ export function get_day_4()
                 path: '/day4/5.png',
                 score: -0,
                 like: 1,
-                risk: 'low',
+                risk: 'safe',
                 reason: 'No face to identify and it’s random cause'
             },
             {
@@ -257,7 +257,7 @@ export function get_day_4()
                 path: '/day4/8.png',
                 score: -0,
                 like: 1,
-                risk: 'low',
+                risk: 'safe',
                 reason: 'People see your kid’s figure but can’t really tell what he is up to'
             }
         ]
@@ -317,14 +317,14 @@ export function get_day_5()
                 path: '/day5/7.png',
                 score: -0,
                 like: 1,
-                risk: 'low',
+                risk: 'safe',
                 reason: 'People don’t see any identities, only see positive post'
             },
             {
                 path: '/day5/8.png',
                 score: -0,
                 like: 1,
-                risk: 'low',
+                risk: 'safe',
                 reason: 'People see your face but not your child’s face, support from community'
             }
         ]
